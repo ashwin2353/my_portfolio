@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Ashwin Siddhartha - Data Science Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="image/ham.png" alt="" width="23">
+                <img class="cross" src="image/cross.png" alt="" width="23">
+            </div>
+            <div class="blogcontainer">
+                <h1>Blogs by Ashwin Siddhartha</h1>
+                <div class="blogitem">
+                    <h2>Linear regression</h2><br>
+                    <p>Linear regression is a statistical modeling technique used to establish a relationship between
+                        one or more independent variables and a dependent variable. It assumes a linear relationship,
+                        meaning that the target variable can be predicted as a linear combination of the input
+                        variables.</p><br>
+                    <span class="read-more-text">
+                        <h3>Simple Linear Regression:</h3><br>
+                        <p>Simple linear regression is a statistical technique that models the relationship between two
+                            variables: a dependent variable (usually denoted as y) and an independent variable (usually
+                            denoted as x). It assumes a linear relationship between the variables, meaning that the
+                            change in the dependent variable is directly proportional to the change in the independent
+                            variable.</p><br>
+                        <div><img class="slr" src="image/slr.png" alt="" width="350"></div>
+                        <p>The equation for simple linear regression is:</p><br>
+                        <h4>y = mx + b</h4><br>
+                        <p>Where:</p><br>
+
+                        <p>y is the dependent variable
+                            x is the independent variable
+                            m is the slope of the line, representing the change in y for each unit change in x
+                            b is the y-intercept, representing the value of y when x is 0.</p><br>
+                        <p>The goal of simple linear regression is to estimate the values of m and b that best fit the
+                            observed data. This is done by minimizing the difference between the observed y-values and
+                            the predicted y-values on the regression line. The most commonly used method for estimation
+                            is called ordinary least squares (OLS).</p><br>
+                        <p>Once the line of best fit is determined, it can be used to make predictions. Given a value of
+                            x, we can use the equation to estimate the corresponding value of y. Simple linear
+                            regression is commonly used in situations where we want to understand and predict the
+                            relationship between two variables, such as predicting housing prices based on the size of
+                            the house.</p><br><br>
+                        <h3>Multiple Linear Regression:</h3><br>
+                        <p>Multiple linear regression extends the concept of simple linear regression by considering
+                            more than one independent variable. It models the relationship between a dependent variable
+                            (y) and two or more independent variables (x₁, x₂, ..., xn).</p><br>
+                        <div><img class="slr" src="image/mlr.png" alt="" width="350"></div>
+                        <p>The equation for multiple linear regression is:</p><br>
+                        <h3>y = b₀ + b₁x₁ + b₂x₂ + ... + bnxn</h3><br>
+                        <p>Where:</p>
+
+                        <p> y is the dependent variable
+                            x₁, x₂, ..., xn are the independent variables
+                            b₀, b₁, b₂, ..., bn are the coefficients or slopes associated with each independent variable
+                            b₀ is the y-intercept, representing the value of y when all independent variables are 0.</p>
+                        <p>In multiple linear regression, the goal is to estimate the values of the coefficients (b₀,
+                            b₁, b₂, ..., bn) that provide the best fit to the observed data. The estimation is typically
+                            done using the OLS method, similar to simple linear regression.</p><br>
+                        <p>Multiple linear regression allows us to analyze the simultaneous effects of multiple
+                            independent variables on the dependent variable. It helps in understanding the relationships
+                            and interactions between various factors and their impact on the outcome variable. For
+                            example, we might use multiple linear regression to predict a person's salary based on their
+                            years of experience, education level, and age.</p><br>
+                        <h3>summary</h3><br>
+                        <p>In summary, simple linear regression involves modeling the relationship between two
+                            variables, while multiple linear regression considers the relationship between a dependent
+                            variable and multiple independent variables. Both techniques aim to estimate the best-fit
+                            line or equation that minimizes the difference between observed and predicted values.</p>
+                    </span>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+
+                <div class="blogitem">
+                    <h2>logistic regression</h2><br>
+                    <p>Logistic regression is a statistical model used to predict binary or categorical outcomes based
+                        on a set of predictor variables. It is a type of regression analysis commonly used in machine
+                        learning and statistics.</p><br>
+                    <span class="read-more-text">
+                        <p>The goal of logistic regression is to estimate the probability of a certain event occurring
+                            based on the values of the input variables. Unlike linear regression, which predicts
+                            continuous outcomes, logistic regression predicts the probability of an event belonging to a
+                            specific category.</p><br>
+                        <p>The logistic regression model assumes a logistic or sigmoid-shaped curve, which ranges from 0
+                            to 1. This curve represents the probability of the event occurring across different values
+                            of the predictor variables. The curve starts at 0 for the lowest values of the predictors
+                            and approaches 1 for the highest values, with a smooth transition in between.</p><br>
+                        <p>In logistic regression, the predictor variables are combined linearly using weights or
+                            coefficients, similar to linear regression. However, instead of directly predicting the
+                            outcome, the linear combination is passed through the logistic function, which maps the
+                            linear combination to a probability value between 0 and 1.</p><br>
+                        <div><img class="slr" src="image/log.png" alt="" width="350"></div><br>
+                        <p>The logistic function, also known as the sigmoid function, is defined as:</p><br>
+                        <h4>P(Y=1|X) = 1 / (1 + e^(-z))</h4><br>
+                        <p>where P(Y=1|X) is the probability of the event occurring given the predictors, X represents
+                            the predictor variables, and z is the linear combination of the predictors and their
+                            corresponding weights.</p><br>
+
+                        <p>The logistic regression model is typically estimated using maximum likelihood estimation,
+                            which seeks to find the set of coefficients that maximizes the likelihood of the observed
+                            outcomes given the predictor variables. These coefficients indicate the strength and
+                            direction of the relationship between each predictor and the probability of the event
+                            occurring.</p><br>
+
+                        <p>Logistic regression can be used for various applications, such as predicting whether an email
+                            is spam or not spam based on its features, determining the likelihood of a customer
+                            purchasing a product, or predicting the probability of a patient having a certain medical
+                            condition based on their symptoms and demographic information.</p><br>
+                        <p>It's worth noting that logistic regression assumes that the relationship between the
+                            predictors and the log-odds of the outcome is linear. If the relationship is non-linear, you
+                            may need to consider using more complex models, such as polynomial logistic regression or
+                            other machine learning algorithms.</p>
+                    </span>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+
+
+                <div class="blogitem">
+                    <h2>Support Vector Machines</h2><br>
+                    <p>Support Vector Machines (SVMs) are supervised machine learning models used for classification and
+                        regression tasks. SVMs are particularly effective for solving complex problems where the data is
+                        not linearly separable..</p><br>
+                    <span class="read-more-text">
+                        <p>The basic idea behind SVMs is to find a hyperplane that best separates the data points of
+                            different classes in a high-dimensional space. A hyperplane is a decision boundary that
+                            separates the classes. In a binary classification problem, the hyperplane aims to maximize
+                            the margin between the nearest data points of different classes. The data points that lie
+                            closest to the hyperplane are called support vectors, hence the name "Support Vector
+                            Machines."</p><br>
+                        <p>Here's a step-by-step explanation of how SVM works:</p><br>
+                        <p>1. Data Representation: SVMs work with labeled training data, where each data point is
+                            represented by a set of features and belongs to one of the classes.</p><br>
+                        <p>2. Feature Transformation: The data may be transformed into a higher-dimensional feature
+                            space using techniques like the kernel trick. This transformation allows SVMs to find
+                            non-linear decision boundaries in the original space.</p><br>
+                        <p>3. Selection of Hyperplane: SVMs aim to find the hyperplane that maximizes the margin between
+                            the support vectors of different classes. The margin is the perpendicular distance between
+                            the hyperplane and the support vectors. This hyperplane is chosen such that it achieves the
+                            best separation between the classes.</p><br>
+
+                        <p>4. Soft Margin (C): In some cases, it may not be possible to find a hyperplane that perfectly
+                            separates the classes. SVMs introduce a parameter C, called the regularization parameter,
+                            that controls the trade-off between maximizing the margin and allowing some
+                            misclassifications (soft margin). A higher value of C allows fewer misclassifications but
+                            may lead to overfitting, while a lower value of C allows more misclassifications but
+                            generalizes better./p><br>
+
+                        <p>5. Non-Linear Separation: If the data is not linearly separable, SVMs can use a kernel
+                            function to implicitly map the data into a higher-dimensional feature space. This kernel
+                            trick avoids the computational complexity of explicitly transforming the data and allows
+                            SVMs to find non-linear decision boundaries. Popular kernel functions include the linear
+                            kernel, polynomial kernel, Gaussian radial basis function (RBF) kernel, and sigmoid kernel.
+                        </p><br>
+
+                        <p>6. Training and Optimization: The objective is to find the optimal hyperplane that maximizes
+                            the margin and minimizes the classification error. SVMs use optimization algorithms such as
+                            quadratic programming or sequential minimal optimization (SMO) to solve this optimization
+                            problem efficiently.</p><br>
+                        <p>7. Classification: Once the hyperplane is determined, SVMs can classify new, unseen data
+                            points by determining which side of the hyperplane they lie on. If the data point lies on
+                            the positive side, it belongs to one class, and if it lies on the negative side, it belongs
+                            to the other class.</p><br>
+                        <p>Support Vector Machines (SVMs) can be used as linear classifiers or non-linear classifiers,
+                            depending on the type of decision boundaries they can create.</p><br>
+                        <div><img class="slr" src="image/svm-linear.png" alt="" width="350"></div><br>
+                        <p>Linear SVM: In linear SVM, the goal is to find a linear hyperplane that separates the data
+                            points of different classes in a high-dimensional space. The decision boundary is a straight
+                            line (in 2D) or a hyperplane (in higher dimensions) that maximizes the margin between the
+                            classes. The linear SVM works well when the classes are linearly separable, meaning a
+                            straight line or a hyperplane can completely separate the data points. However, if the data
+                            points are not linearly separable, a linear SVM may not be able to achieve high accuracy.
+                        </p><br>
+                        <div><img class="slr" src="image/svm-non-linear.png" alt="" width="350"></div><br>
+                        <p>Non-linear SVM: In non-linear SVM, the data is transformed into a higher-dimensional feature
+                            space using techniques like the kernel trick. This transformation allows SVMs to find
+                            non-linear decision boundaries that can separate the classes. The kernel trick implicitly
+                            maps the data into a higher-dimensional space, where linear separation may be possible. The
+                            decision boundary in the original space becomes a non-linear boundary in the transformed
+                            space. Non-linear SVMs are effective when the classes are not linearly separable. Some
+                            popular kernel functions used in non-linear SVMs include:
+
+                            a. Polynomial Kernel: The polynomial kernel function allows SVMs to create decision
+                            boundaries that are polynomial in nature, such as curved lines or curved hyperplanes.
+
+                            b. Gaussian Radial Basis Function (RBF) Kernel: The RBF kernel creates decision boundaries
+                            that are non-linear and can capture complex relationships between the data points. It is
+                            widely used for non-linear classification tasks.
+
+                            c. Sigmoid Kernel: The sigmoid kernel creates decision boundaries that are sigmoid-shaped
+                            and can model non-linear relationships between the data points.</p><br>
+
+                    </span>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+
+
+                <div class="blogitem">
+                    <h2> k-Nearest Neighbors</h2><br>
+                    <p>k-nearest neighbors (k-NN) algorithm. K-nearest neighbors is a supervised machine learning
+                        algorithm used for classification and regression tasks.</p><br>
+                    <p>The k-NN algorithm operates based on the principle that similar data points are likely to belong
+                        to the same class or have similar output values. It makes predictions by comparing a new, unseen
+                        data point with its k nearest neighbors in the training data. The value of k is a user-defined
+                        parameter.</p><br>
+                    <span class="read-more-text">
+                        <div><img class="slr" src="image/knn.png" alt="" width="350"></div><br>
+                        <p>Here's an overview of how the k-NN algorithm works for classification:</p><br>
+                        <p>1. Data Representation: The training data consists of labeled examples, where each data point
+                            is represented by a set of features and belongs to a specific class.</p><br>
+                        <p>2. Distance Calculation: The algorithm computes the distance between the new data point and
+                            all other data points in the training set. Common distance metrics include Euclidean
+                            distance, Manhattan distance, or other distance measures based on the problem domain.</p>
+                        <br>
+                        <p>3. Finding Neighbors: The k-NN algorithm selects the k nearest neighbors of the new data
+                            point based on the calculated distances. These neighbors are the k data points in the
+                            training set that are closest to the new data point.</p><br>
+
+                        <p>4.Majority Voting: For classification, the algorithm assigns the class label to the new data
+                            point based on the majority class among its k nearest neighbors. In other words, it counts
+                            the number of neighbors belonging to each class and assigns the class that appears most
+                            frequently.</p><br>
+
+                        <p>5. Regression (Optional): If k-NN is used for regression, instead of class labels, the
+                            algorithm predicts the output value for the new data point based on the average or weighted
+                            average of the output values of its k nearest neighbors.</p><br>
+
+                        <p>6. Choosing the Value of k: The choice of the parameter k is crucial and depends on the
+                            dataset and the problem at hand. A small value of k may lead to overfitting, while a large
+                            value of k may result in underfitting. It's important to choose an appropriate value of k
+                            through experimentation or using techniques like cross-validation.</p><br>
+                        <p>K-nearest neighbors has several advantages, such as simplicity and flexibility. It can handle
+                            both binary and multi-class classification problems and can be used for regression tasks as
+                            well. Additionally, k-NN is a non-parametric algorithm, meaning it doesn't make any
+                            assumptions about the underlying data distribution.</p><br>
+                        <p>However, k-NN has some limitations. It can be computationally expensive, especially when
+                            working with large datasets, as it requires calculating distances between the new data point
+                            and all training data points. Additionally, k-NN is sensitive to the choice of distance
+                            metric and the scaling of input features. Preprocessing and feature scaling can have a
+                            significant impact on the performance of k-NN.</p><br>
+                        <p>Overall, k-nearest neighbors is a simple yet effective algorithm for classification and
+                            regression tasks, relying on the similarity of data points to make predictions.</p><br>
+                    </span>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+
+
+
+                <div class="blogitem">
+                    <h2>Naive Bayes classifier</h2><br>
+                    <p>The Naive Bayes classifier is a popular supervised machine learning algorithm used for
+                        classification tasks. It is based on Bayes' theorem and makes the assumption of feature
+                        independence, which is why it is called "naive." Despite its simplicity and the naive
+                        assumption, the Naive Bayes classifier often performs well in various applications.</p><br>
+                    <span class="read-more-text">
+                        <p>Here's an explanation of how the Naive Bayes classifier works:.</p><br>
+                        <div><img class="slr" src="image/naive.png" alt="" width="700"></div><br>
+                        <p>Here's an overview of how the k-NN algorithm works for classification:</p><br>
+                        <p>1. Data Representation: The training data consists of labeled examples, where each example is
+                            represented by a set of features and belongs to a specific class.</p><br>
+                        <p>2. Class Prior Probability: The Naive Bayes classifier starts by estimating the prior
+                            probability of each class in the training data. This is calculated by counting the number of
+                            examples belonging to each class and dividing it by the total number of training examples.
+                        </p>
+                        <br>
+                        <p>3. Feature Likelihood: For each feature and each class, the Naive Bayes classifier estimates
+                            the likelihood or probability distribution of that feature given the class. Depending on the
+                            type of feature (categorical or continuous), different probability distributions can be
+                            used. For categorical features, it estimates the probability of each category given the
+                            class based on the observed frequencies in the training data. For continuous features, it
+                            estimates the probability distribution (e.g., Gaussian distribution) parameters such as mean
+                            and variance for each class.
+
+                        </p><br>
+
+                        <p>4. Joint Probability Calculation: Given a new, unseen example with feature values, the Naive
+                            Bayes classifier calculates the joint probability of the features and the class for each
+                            class. It multiplies the prior probability of the class with the likelihoods of each feature
+                            value given that class.</p><br>
+
+                        <p>5. Class Prediction: The Naive Bayes classifier selects the class with the highest joint
+                            probability as the predicted class for the new example. This is also known as maximum a
+                            posteriori (MAP) classification.
+
+                        </p><br>
+
+                        <p>The key assumption made by the Naive Bayes classifier is the independence assumption, which
+                            assumes that the features are conditionally independent given the class. Although this
+                            assumption is rarely met in real-world data, the Naive Bayes classifier can still perform
+                            well in practice. It is particularly efficient when working with high-dimensional data, as
+                            the classifier's training and prediction time complexity is linear with the number of
+                            features.</p><br>
+                        <p>Naive Bayes classifiers have been successfully applied to various applications, including
+                            text classification (e.g., spam detection), sentiment analysis, document categorization, and
+                            recommendation systems. Despite their simplicity and the naive assumption, Naive Bayes
+                            classifiers can achieve competitive performance, especially in situations where the
+                            independence assumption is not severely violated.</p><br>
+
+                    </span>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
